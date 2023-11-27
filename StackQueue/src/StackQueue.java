@@ -3,6 +3,9 @@ public class StackQueue<T> {
     private Stack<T> inv = new Stack<T>();
     private int size = reg.size();
 
+    public StackQueue(){
+    }
+
 
 }
 
