@@ -28,6 +28,9 @@ public class StackQueue<T> {
         return reg.isEmpty();
     }
 
+    public int size(){
+        return reg.size();
+    }
 
 }
 
