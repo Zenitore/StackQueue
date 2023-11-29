@@ -27,8 +27,14 @@ public class Stack<T> {
 
     public T pop(){
         StackNode<T> deletedNode = currentNode;
-        currentNode = currentNode.getParentNode();
-        size--;
+        if(!isEmpty()) {
+            if (size == 1) {
+                size--;
+            } else {
+                currentNode = currentNode.getParentNode();
+                size--;
+            }
+        }
         return deletedNode.getValue();
     }                 //remove and return the top element
 

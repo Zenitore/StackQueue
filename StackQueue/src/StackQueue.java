@@ -7,7 +7,7 @@ public class StackQueue<T> {
     }
 
     public void enqueue(T element){
-        if (!reg.isEmpty()){
+        if (reg.isEmpty()){
             reg.push(element);
         }
         else{
@@ -15,7 +15,7 @@ public class StackQueue<T> {
                 inv.push(reg.pop());
             }
             reg.push(element);
-            while(inv.isEmpty()){
+            while(!inv.isEmpty()){
                 reg.push(inv.pop());
             }
         }
