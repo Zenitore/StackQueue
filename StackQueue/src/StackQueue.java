@@ -21,12 +21,6 @@ public class StackQueue<T> {
         }
     }
 
-    public T dequeue(){
-        return reg.pop();
-    }
-    public boolean isEmpty(){
-        return reg.isEmpty();
-    }
 
     public int size(){
         return reg.size();
@@ -35,7 +29,6 @@ public class StackQueue<T> {
     public T peek(){
         return reg.peek();
     }
-
 
 }
 
