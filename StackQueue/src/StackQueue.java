@@ -25,5 +25,6 @@ public class StackQueue<T> {
         return reg.pop();
     }
 
+
 }
 
