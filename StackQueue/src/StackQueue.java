@@ -26,5 +26,6 @@ public class StackQueue<T> {
         return reg.size();
     }
 
+
 }
 
