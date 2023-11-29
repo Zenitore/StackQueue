@@ -25,6 +25,10 @@ public class StackQueue<T> {
         return reg.pop();
     }
 
+    public boolean isEmpty(){
+        return reg.isEmpty();
+    }
+
     public int size(){
         return reg.size();
     }
